@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e21e075ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="login-navigation">
+        <div class="nav-left">
+            <img src="/images/logo.png" class="logo">
+        </div>
+        <div class="nav-right">
+            <div class="login-btn" onclick="toLogin()">
+                <button>Login</button>
+            </div>
+            
+            <div class="login-btn" onclick="toRegister()">
+                <button>Register</button>
+            </div>
+            <i class="fa-solid fa-user"></i>
+        </div>
+        
+    </nav>
+
+    <div class="wrapper">
+        <div class="form-box login">
+            <h1>Login</h1>
+            <form action="#">
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <lable>Email</lable>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <lable>Password</lable>
+                </div>
+                <div class="remember">
+                    <lable><input type="checkbox">Remember me</lable>
+                    <a href="#">Forgot password?</a>
+                </div>  
+                <button type="submit" class="btn"><a class="btn" href="index.html" style="text-decoration: none ;">Login</a></button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="registerlink">Register</a> now!</p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h1>Register</h1>
+            <form action="#">
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" required>
+                    <lable>Username</lable>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required>
+                    <lable>Email</lable>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required>
+                    <lable>Password</lable>
+                </div>
+                <div class="remember">
+                    <lable><input type="checkbox">I agree to the <a href="#">terms</a> & <a href="#">conditions</a></lable>
+                </div>  
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? Try <a href="#" class="loginlink">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="srcipt.js"></script>
+
+</body>
+</html>
